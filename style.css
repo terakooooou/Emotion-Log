@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+    line-height: 1.5;
+    background-color: cadetblue;
+    color: black;
+    margin: 0;
+}
+
+header{
+    background-color: aquamarine;
+    text-align: center;
+}
+
+header h1{
+    font-size: 1.5rem;
+}
+
+main{
+    padding: 1rem;
+    text-align: center;
+}
+
+section{
+    margin-bottom: 2rem;
+}
+
+#rating-section{
+    text-align: center;
+    margin-top: 1rem;
+}
+
+#rating-section button{
+    display: block;
+    width: 80%;
+    max-width: 300px;
+    margin: 0.5rem auto;/*余白．上下は0.5rem,サイドは自動調整*/
+    padding: 0.75rem;/*文字の周りのスペース*/
+    font-size: 1rem;
+    border-radius: 4px;/*ボタンの枠の太さ*/
+    cursor: pointer; /*カーソルを合わせると，形が変わる*/
+}
+
+#rating-section button[data-value="5"] {
+    background: hsl(120,100%,50%); 
+}
+
+#rating-section button[data-value="4"] {
+    background: lightgreen;
+}
+
+#rating-section button[data-value="3"] {
+    background: yellow;
+}
+#rating-section button[data-value="2"] {
+    background: orange;
+}
+#rating-section button[data-value="1"] {
+    background: red;
+}
+
+#month-nav{
+    text-align: center;
+
+}
+#calendar-section{
+    display: inline-block;
+    justify-content: center;
+    background: #fff;
+    padding: 0.5rem;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmotionLog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>EmotionLog</header>
+
+    <main>
+        <section id="rating-section">
+            <p>Let's rate today's mood on a scale of 1 to 5</p>
+
+            <button data-value="5">Very good!</button>
+            <button data-value="4">Good!</button>
+            <button data-value="3">Neutral</button>
+            <button data-value="2">Not so good</button>
+            <button data-value="1">Bad</button>
+        </section>
+
+        <div id="month-nav">
+            <button id="prev-btn">＜</button>
+            <span id="month-label"></span>
+            <button id="next-btn">＞</button>
+        </div>
+
+        <section id="calendar-section">
+            <p>here calender</p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
