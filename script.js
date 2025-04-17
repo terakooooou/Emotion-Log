@@ -1,11 +1,17 @@
 let currentYear;
 let currentMonth;
 
-
-
 window.addEventListener('DOMContentLoaded',()=>{
-    const ratingButtons=document.querySelectorAll('#rating-section button');
 
+    const now= new Date();
+    currentYear=now.getFullYear();
+    currentMonth=now.getMonth()+1;
+
+    document.getElementById('prev-btn').addEventListener('click',showPrevMonth);
+    document.getElementById('next-btn').addEventListener('click',showNextMonth);
+
+
+    const ratingButtons=document.querySelectorAll('#rating-section button');
     ratingButtons.forEach((button)=>{
         button.addEventListener('click',()=>{
             const value=button.getAttribute('data-value');
@@ -17,29 +23,11 @@ window.addEventListener('DOMContentLoaded',()=>{
             localStorage.setItem('emotionLogs',JSON.stringify(storedData));
 
             console.log(today+"の評価を"+value+"に設定しました！");
-
-            const now= new Date();
-            currentYear=now.getFullYear();
-            currentMonth=now.getMonth()+1;
-
             renderCalendar(currentYear,currentMonth);
-
-            document.getElementById('prev-btn').addEventListener('click',showPrevMonth);
-            document.getElementById('next-btn').addEventListener('click',showNextMonth);
-
-            updateMonthLabel();
-
         })
     })
-
-    const now= new Date();
-    currentYear=now.getFullYear();
-    currentMonth=now.getMonth()+1;
-
     updateMonthLabel();
-
     renderCalendar(currentYear,currentMonth);
-    
 });
 
 const colorMap={
