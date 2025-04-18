@@ -18,7 +18,13 @@ window.addEventListener('DOMContentLoaded',()=>{
             const today=getToday();
     
             const storedData=JSON.parse(localStorage.getItem('emotionLogs'))||{};
-            storedData[today]=value;
+            
+            if(storedData[today]===value){
+                delete storedData[today];
+            }else{
+                storedData[today]=value;
+            }
+
 
             localStorage.setItem('emotionLogs',JSON.stringify(storedData));
 
@@ -100,6 +106,10 @@ function renderCalendar(year,month){
             if(storedData[dayString]){
                 const value=storedData[dayString];
                 td.style.backgroundColor=colorMap[value]||'transparent';
+            }
+
+            if(dayString===getToday()){
+                td.classList.add('today')
             }
 
             currentDay++;
