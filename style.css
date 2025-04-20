@@ -90,3 +90,30 @@ section{
 .today{
     border: 2px solid black;   
 }
+
+.calendar-table td.has-comment {
+    position: relative;
+  }
+  
+  /* 吹き出しアイコンを ::before で重ねる */
+  .calendar-table td.has-comment::before {
+    content: "";
+    display: block;                       
+    position: absolute;
+    top: 50%; left: 50%;
+    width: 100%; height: 80%;               
+    transform: translate(-50%, -50%);
+    background-image: url('吹き出し.png'); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;             
+    opacity: 0.5;
+    pointer-events: none;
+    z-index: 0;                            /* 背面に置く */
+  }
+  
+  /* セルの文字を前面に */
+  .calendar-table td.has-comment {
+    z-index: 1;                           
+  }
+  
