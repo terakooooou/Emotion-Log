@@ -9,7 +9,7 @@ window.addEventListener('DOMContentLoaded',()=>{
     title.classList.add('fade-out');
 
     setTimeout(()=>title.remove(),1000);
-  },2000);
+  },3000);
 
     const now= new Date();
     currentYear=now.getFullYear();
