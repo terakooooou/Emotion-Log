@@ -118,10 +118,10 @@ section{
 
 .calendar-table td.has-comment {
     position: relative;
-  }
+}
   
   /* 吹き出しアイコンを ::before で重ねる */
-  .calendar-table td.has-comment::before {
+.calendar-table td.has-comment::before {
     content: "";
     display: block;                       
     position: absolute;
@@ -135,10 +135,18 @@ section{
     opacity: 0.5;
     pointer-events: none;
     z-index: 0;                            /* 背面に置く */
-  }
+}
   
   /* セルの文字を前面に */
-  .calendar-table td.has-comment {
+.calendar-table td.has-comment {
     z-index: 1;                           
-  }
-  
+}
+.sunday{
+    color: red;
+}
+
+.saturday{
+    color: blue;
+}
+
+
