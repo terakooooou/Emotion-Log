@@ -40,7 +40,7 @@
 ---
 
 ## スクリーンショット
-![スクリーンショット](image/IMG_8547.jpeg)
+![スクリーンショット](image/IMG_8547.png)
 ![スクリーンショット](image/IMG_8529.jpeg)
 ![スクリーンショット](image/IMG_8548.jpeg)
 ![スクリーンショット](image/IMG_8549.jpeg)
