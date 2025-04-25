@@ -40,10 +40,11 @@ body{
 }
 
 #header img{
-    margin-top: 4rem;
-    margin-left: 2.2rem;
-    width: 80%;
-    
+    margin-top: 1rem;
+    justify-content: center;
+    align-items: center;    
+    max-width: 100%;          /* 幅を画面サイズに合わせて調整 */
+    height: auto;
 }
 
 main{
