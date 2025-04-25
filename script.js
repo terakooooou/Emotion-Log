@@ -3,6 +3,14 @@ let currentMonth;
 
 window.addEventListener('DOMContentLoaded',()=>{
 
+
+  setTimeout(()=>{
+    const title=document.getElementById('title-screen');
+    title.classList.add('fade-out');
+
+    setTimeout(()=>title.remove(),1000);
+  },2000);
+
     const now= new Date();
     currentYear=now.getFullYear();
     currentMonth=now.getMonth()+1;
