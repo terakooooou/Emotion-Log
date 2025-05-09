@@ -39,6 +39,10 @@ body{
     pointer-events: none;
 }
 
+#header {
+    text-align: center;  
+  }
+
 #header img{
     margin-top: 1rem;
     justify-content: center;
