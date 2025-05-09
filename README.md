@@ -51,6 +51,4 @@
 ![スクリーンショット](image/IMG_8549.jpeg)
 ---
 
-## ライセンス
 
-MIT License
