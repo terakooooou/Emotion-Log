@@ -39,7 +39,7 @@
 - GitHub Pages で公開  
 - LocalStorage にデータ保存（ログイン不要）  
 
-## スクリーンショット
+##参考画像
 
 ![スクリーンショット](image/IMG_8547.png)  
 ![スクリーンショット](image/IMG_8529.jpeg)  
