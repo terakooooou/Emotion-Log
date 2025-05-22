@@ -42,6 +42,6 @@
 ##参考画像
 
 ![スクリーンショット](image/IMG_8547.png)  
-![スクリーンショット](image/IMG_8529.jpeg)  
-![スクリーンショット](image/IMG_8548.jpeg)  
+![スクリーンショット](image/IMG_9566.jpeg)  
+![スクリーンショット](image/IMG_9567.jpeg)  
 ![スクリーンショット](image/IMG_8549.jpeg) 
