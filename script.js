@@ -29,7 +29,11 @@ window.addEventListener('DOMContentLoaded',()=>{
             const existing=storedData[today]||{};
             
             if(existing.value===value){
-                delete storedData[today];
+                delete storedData[today].value;
+
+                if(!storedData[today].comment){
+                    delete storedData[today];
+                }
             }else{
                 storedData[today]={
                     value:value,
